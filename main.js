@@ -86,14 +86,14 @@ function player_update(){
             console.log('i')
             block_update('ground.png')
         }
-        if (keypress_store=="80" && e.shiftKey==true){
+        if (keypress_store=="80" && e.shiftKey==true && block_width<100 && block_height<100){
             block_width+=10
             block_height+=10
             document.getElementById('width').innerHTML=block_width
             document.getElementById('height').innerHTML=block_height
             console.log('P&shift pressed together')
         }
-        if (keypress_store=="77" && e.shiftKey==true){
+        if (keypress_store=="77" && e.shiftKey==true && block_height>10 && block_width>10){
             block_width-=10
             block_height-=10
             document.getElementById('width').innerHTML=block_width
